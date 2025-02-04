@@ -1,0 +1,17 @@
+.container {
+    background-color: #f8f9fa; 
+    padding: 16px;
+  }
+  
+  .card {
+    border: none;
+    border-radius: 10px;
+  }
+  
+  .w-45 {
+    width: 45%;
+  }
+  
+  .text-danger {
+    font-size: 0.875rem;
+  }

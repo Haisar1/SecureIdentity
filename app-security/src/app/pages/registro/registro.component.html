@@ -1,0 +1,40 @@
+<div class="container d-flex justify-content-center align-items-center vh-100">
+     <div class="card shadow-lg p-4" style="width: 100%; max-width: 400px; border-radius: 10px;">
+       <h3 class="text-center mb-4">Registrarse</h3>
+       <form [formGroup]="formRegistro">
+         <div class="mb-3">
+           <label for="nombre" class="form-label">Usuario</label>
+           <input
+             type="text"
+             id="usuario"
+             class="form-control"
+             formControlName="usuario"
+             placeholder="Ingrese su usuario"
+           />
+           <div class="text-danger mt-1" *ngIf="formRegistro.get('usuario')?.invalid && formRegistro.get('usuario')?.touched">
+             El usuario es obligatorio
+           </div>
+         </div>
+   
+   
+         <div class="mb-3">
+           <label for="pass" class="form-label">Clave</label>
+           <input
+             type="password"
+             id="pass"
+             class="form-control"
+             formControlName="clave"
+             placeholder="Ingrese su clave"
+           />
+           <div class="text-danger mt-1" *ngIf="formRegistro.get('pass')?.invalid && formRegistro.get('pass')?.touched">
+             La clave es obligatoria
+           </div>
+         </div>
+   
+         <div class="d-flex justify-content-between">
+           <button type="button" class="btn btn-primary w-45" (click)="registrarse()">Registrarse</button>
+           <button type="button" class="btn btn-danger w-45" (click)="volver()">Volver</button>
+         </div>
+       </form>
+     </div>
+   </div>
