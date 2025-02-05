@@ -3,8 +3,7 @@ import { CanActivateFn, Router } from '@angular/router';
 import { ControlService } from '../Services/control.service';
 import { catchError, map, of } from 'rxjs';
 
-export const authGuard: CanActivateFn = (route, state) => {
-     debugger;
+export const authGuard: CanActivateFn = () => {
      const token = localStorage.getItem("token") || "";
      const router = inject(Router);
 
@@ -25,8 +24,6 @@ export const authGuard: CanActivateFn = (route, state) => {
                })
           )
      }else {
-          // router.navigateByUrl("");
-          // return false
           const url = router.createUrlTree([""])
           return url;
      }
