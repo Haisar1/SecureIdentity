@@ -11,6 +11,9 @@ El sistema está diseñado con autenticación segura, manejo de logs con **Seril
 
 - **API-SECURE**: Carpeta que contiene el proyecto **Backend en .NET 8**.
 - **app-security**: Carpeta que contiene el proyecto **Frontend en Angular**.
+- **BaseDedatos**: Carpeta que contiene el script de sql server
+- **validatorLIB**: Carpeta que contiene una libreria de clases para validar email
+
 
 ## Características
 
