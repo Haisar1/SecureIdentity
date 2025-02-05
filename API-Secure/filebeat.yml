@@ -1,0 +1,12 @@
+filebeat.inputs:
+  - type: log
+    enabled: true
+    paths:
+      - C:\app\logs\*.log
+
+output.elasticsearch:
+  hosts: ["http://elasticsearch:9200"]
+  index: "logs-dotnet"
+
+setup.kibana:
+  host: "http://kibana:5601"
