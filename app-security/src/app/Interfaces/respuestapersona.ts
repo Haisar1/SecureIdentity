@@ -1,6 +1,6 @@
 import { Persona } from "./persona";
 
 
-export interface ResponseProducto{
-    value:Persona[]
+export interface respuestapersona{
+ value:Persona[]
 }     

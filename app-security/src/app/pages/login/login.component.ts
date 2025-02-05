@@ -48,7 +48,7 @@ export class LoginComponent {
       next: (data) => {
         if (data.isSuccess) {
           localStorage.setItem("token", data.token);
-          this.router.navigate(['inicio']);
+          this.router.navigate(['personas']);
         } else {
           alert("Credenciales son incorrectas");
         }
