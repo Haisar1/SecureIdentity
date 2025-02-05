@@ -25,6 +25,7 @@ El sistema está diseñado con autenticación segura, manejo de logs con **Seril
    - Configuración de **Serilog** para el registro de logs.
    - **CORS** habilitado para la comunicación con el frontend de Angular.
    - Documentación de las APIs a través de **Swagger**.
+   -Registro de logs utilizando Serilog
 
 2. **Frontend (Angular)**:
    - Interfaz de usuario para interactuar con la API.
